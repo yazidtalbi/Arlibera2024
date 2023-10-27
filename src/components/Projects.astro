@@ -36,7 +36,6 @@
 
   .card__item {
     position: relative;
-    min-height: 500px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition: all 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
@@ -75,11 +74,34 @@
   /* ------------------------------------------------*/
   /* Preview Sections End */
   /* ------------------------------------------------*/
-</style>
 
-<h2 class="inner__title animate-in-up">
-  Creativity is above all. Just awesome template.
-</h2>
+  .img-fluid {
+    max-width: 70px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .card__title {
+      padding: 10rem !important;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .card__title {
+      padding: 7rem !important;
+    }
+  }
+  .card__title {
+    padding: 10rem !important;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .rank {
+      font-size: 2.5rem !important;
+    }
+  }
+  .rank {
+    font-size: 2.5rem !important;
+  }
+</style>
 
 <!-- <div class="intro__content mx-5">
   <div class="intro__container">
@@ -120,77 +142,82 @@
   </div>
 </div> -->
 
-<section
-  id="live-preview"
-  class="demo__links first-section"
-  data-astro-cid-amng4zvp=""
->
-  <div class="links__card" data-astro-cid-amng4zvp="">
-    <div class="container-fluid p-0" data-astro-cid-amng4zvp="">
-      <div class="row gx-5 gy-5 align-items-stretch" data-astro-cid-amng4zvp="">
-        <div class="col-12 col-md-6 col-xxl-6" data-astro-cid-amng4zvp="">
-          <figure class="card__item border-radius-s" data-astro-cid-amng4zvp="">
-            <a
-              class="card__image"
-              href="index-countdown-video.html"
-              target="_blank"
-              data-astro-cid-amng4zvp=""
+<section id="live-preview" class="demo__links first-section">
+  <div
+    class="headline mb-5 margin__title"
+    style="position:relative;    display: flex;
+    padding-bottom: 70px;
+    place-content: space-between;"
+  >
+    <h2 class="headline__title">Une Polyvalence Concrétisée en Expérience</h2>
+    <div class="headline__btnholder d-flex">
+      <a href="#live-preview" class="btn-bottom anim-down scroll-to-preview">
+        <span class="circle">
+          <i class="circle__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 25 25"
             >
+              <path
+                fill="#393C44"
+                d="M25,4.8V24v1h-1H3.8v-1h19.5L0,0.7L0.7,0L24,23.3V4.8H25z"
+              ></path>
+            </svg>
+          </i>
+        </span>
+        <span class="caption">Consulter les <br />derniers articles</span>
+      </a>
+    </div>
+  </div>
+  <div class="links__card">
+    <div class="container-fluid p-0">
+      <div class="row gx-5 gy-5 align-items-stretch">
+        <div
+          class="card card-white border-radius-s animate-in-up h-100"
+          data-astro-cid-amng4zvp=""
+        >
+          <div class="card__image card-image-1" data-astro-cid-amng4zvp="">
+          </div><div
+            class=""
+            style="position:relative;display: flex;
+    place-content: space-between; gap:4%;padding: 3rem;"
+            data-astro-cid-amng4zvp=""
+          >
+            <div class="" data-astro-cid-amng4zvp="">
               <img
-                src="img/demo/screens/2.webp"
-                alt="Emeric Coming Soon Template Preview Screen"
+                class="border-radius-s"
+                src="https://mixdesign.club/themeforest/emeric/img/backgrounds/1000x1500-inner-bg-2.webp"
                 data-astro-cid-amng4zvp=""
+                style="
+    max-height: 560px;
+    min-width: 890px;
+    /* max-width: 100px; */
+    object-fit: cover;
+"
               />
-              <figcaption class="card__caption" data-astro-cid-amng4zvp="">
-                <p class="caption__title" data-astro-cid-amng4zvp="">
-                  Coming soon page
-                </p>
-                <p
-                  class="caption__tags d-flex flex-wrap"
-                  data-astro-cid-amng4zvp=""
-                >
-                  <span class="rounded-tag" data-astro-cid-amng4zvp=""
-                    >Countdown Timer</span
-                  >
-                  <span class="rounded-tag" data-astro-cid-amng4zvp=""
-                    >Video background</span
-                  >
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-        <div class="col-12 col-md-6 col-xxl-6" data-astro-cid-amng4zvp="">
-          <figure class="card__item border-radius-s" data-astro-cid-amng4zvp="">
-            <a
-              class="card__image"
-              href="index-agency-image-countdown.html"
-              target="_blank"
-              data-astro-cid-amng4zvp=""
-            >
-              <img
-                src="img/demo/screens/3.webp"
-                alt="Emeric Coming Soon Template Preview Screen"
+            </div><div data-astro-cid-amng4zvp="" style="
+    margin-top: 80px;
+">
+              <div
+                class="rounded-tag"
+                style="/* margin-bottom:50px; */"
                 data-astro-cid-amng4zvp=""
-              />
-              <figcaption class="card__caption" data-astro-cid-amng4zvp="">
-                <p class="caption__title" data-astro-cid-amng4zvp="">
-                  Creative Agency
-                </p>
-                <p
-                  class="caption__tags d-flex flex-wrap"
-                  data-astro-cid-amng4zvp=""
-                >
-                  <span class="rounded-tag" data-astro-cid-amng4zvp=""
-                    >Countdown Timer</span
-                  >
-                  <span class="rounded-tag" data-astro-cid-amng4zvp=""
-                    >Image Background</span
-                  >
-                </p>
-              </figcaption>
-            </a>
-          </figure>
+              >
+                Web design
+              </div><br data-astro-cid-amng4zvp="" /><h3
+                class="headline__title"
+                style="font-weight:500;margin-bottom: 30px;margin-top: 30px; text-transform:none"
+              >
+                Kinetik Platform with over 3500+ Integrated Providers
+              </h3><p class="opacity-70" style="font-size:2.5rem">
+                We helped Kinetik in developing an app and a convenient
+                analytics dashboard — by the end of 2022, they raised over $20M
+                in funding.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

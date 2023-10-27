@@ -12,6 +12,7 @@ import Testimonials from "../components/Testimonials.astro";
 import Sectors from "../components/Sectors.astro";
 import Posts from "../components/Posts.astro";
 import Cta from "../components/Cta.astro";
+import Benefits from "../components/Benefits.astro";
 ---
 
 <!doctype html>
@@ -44,18 +45,13 @@ import Cta from "../components/Cta.astro";
     <!-- Gradient Background End -->
 
     <Header title={SITE_TITLE} />
-    <section
-      id="main"
-      class="main px-0"
-      style="overflow:auto;    padding: 0 6rem;
-    max-width: 1760px;
-    margin: 0 auto;"
-    >
+    <section id="main" class="main" style="overflow:auto;">
       <Hero />
       <Introduction />
       <Projects />
       <Services />
       <Sectors />
+      <Benefits />
       <Testimonials />
       <Posts />
       <Cta />
