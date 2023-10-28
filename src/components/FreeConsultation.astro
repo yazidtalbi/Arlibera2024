@@ -1,0 +1,122 @@
+<style>
+  /* ------------------------------------------------*/
+  /* Subscribe Block Start */
+  /* ------------------------------------------------*/
+  .demo__subscribe {
+    position: relative;
+    padding: 0 3rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .demo__subscribe {
+      padding: 0 5rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .demo__subscribe {
+      padding: 0 6rem;
+      max-width: 1760px;
+      margin: 0 auto;
+    }
+  }
+
+  .subscribe__container {
+    position: relative;
+    background-color: #131417;
+    overflow: hidden;
+  }
+  @media only screen and (min-width: 1200px) {
+    .subscribe__container {
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-image: url(../img/demo/bg-subscribe.webp);
+    }
+  }
+
+  .subscribe__form {
+    padding: 5rem 2rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .subscribe__form {
+      padding: 7rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .subscribe__form {
+      padding: 10rem;
+    }
+  }
+
+  .subscribe__title,
+  .form-container {
+    max-width: 560px;
+  }
+
+  .subscribe__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+  }
+  @media only screen and (min-width: 1921px) {
+    .subscribe__image {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  /* ------------------------------------------------*/
+  /* Subscribe Block End */
+  /* ------------------------------------------------*/
+</style>
+
+<div class="demo__subscribe" style="margin-top:10rem;margin-bottom:-10rem">
+  <div class="subscribe__container border-radius-l">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-12 col-xl-6 subscribe__form">
+          <div class="subscribe__title">
+            <p
+              class="title opposite"
+              style="
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    font-size: 6rem; line-height: 7rem;"
+            >
+              Vous disposez déjà d’un site Web?
+            </p>
+            <p class="descr opposite">
+              Nous offrons un audit et une consultation gratuite pour votre
+              Business sous la supervision de nos experts afin d’améliorer ses
+              performances
+            </p>
+          </div>
+
+          <div class="form-container">
+            <!-- Reply Messages Start-->
+            <div class="reply-group subscription-ok">
+              <i class="fa-solid fa-circle-check reply-group__icon opposite"
+              ></i>
+              <p class="reply-group__title opposite">Done!</p>
+              <span class="reply-group__text opposite"
+                >Thanks for subscribing!</span
+              >
+            </div>
+            <div class="reply-group subscription-error">
+              <i class="fa-solid fa-face-frown-open reply-group__icon opposite"
+              ></i>
+              <p class="reply-group__title opposite">Ooops!</p>
+              <span class="reply-group__text opposite"
+                >Something went wrong. Please try again later.</span
+              >
+            </div>
+            <!-- Reply Messages End-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
