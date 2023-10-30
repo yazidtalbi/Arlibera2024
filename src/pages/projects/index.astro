@@ -1,0 +1,28 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+
+import SiteLayout from "../../layouts/SiteLayout.astro";
+
+import Hero from "../../components/projects/Hero.astro";
+import Text from "../../components/projects/Text.astro";
+import Services from "../../components/projects/Services.astro";
+import Feedback from "../../components/projects/Feedback.astro";
+import Image from "../../components/projects/Image.astro";
+import Problem from "../../components/projects/Problem.astro";
+import Related from "../../components/projects/Related.astro";
+---
+
+<SiteLayout>
+  <section style="background:white">
+    <Hero />
+    <Problem />
+    <Image />
+    <Text />
+    <Feedback />
+  </section>
+
+  <Related />
+</SiteLayout>
