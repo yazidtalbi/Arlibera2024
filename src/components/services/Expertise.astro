@@ -1,0 +1,262 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+  /* ------------------------------------------------*/
+  /* Preview Start */
+  /* ------------------------------------------------*/
+  .demo__links {
+    position: relative;
+    padding: 0 1.5rem;
+    z-index: 6;
+  }
+  @media only screen and (min-width: 768px) {
+    .demo__links {
+      padding: 0 3rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .demo__links {
+      max-width: 1760px;
+      margin: 0 auto;
+    }
+  }
+
+  .links__card {
+    position: relative;
+    padding: 0 1.5rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .links__card {
+      padding: 0 2rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .links__card {
+      padding: 0 3rem;
+    }
+  }
+
+  .card__item {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+    -moz-transition: all 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+    transition: all 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  }
+  .no-touch .card__item:hover {
+    -webkit-transform: translate3d(0, -0.6rem, 0);
+    -moz-transform: translate3d(0, -0.6rem, 0);
+    transform: translate3d(0, -0.6rem, 0);
+    -webkit-box-shadow:
+      0 14px 28px rgba(24, 59, 126, 0.15),
+      0 10px 10px rgba(24, 59, 126, 0.12);
+    -moz-box-shadow:
+      0 14px 28px rgba(24, 59, 126, 0.15),
+      0 10px 10px rgba(24, 59, 126, 0.12);
+    box-shadow:
+      0 14px 28px rgba(24, 59, 126, 0.15),
+      0 10px 10px rgba(24, 59, 126, 0.12);
+  }
+
+  .card__image {
+    display: block;
+    cursor: pointer;
+  }
+
+  .card__caption {
+    padding: 2rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .card__caption {
+      padding: 3rem;
+    }
+  }
+
+  /* ------------------------------------------------*/
+  /* Preview Sections End */
+  /* ------------------------------------------------*/
+
+  .img-fluid {
+    max-width: 70px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .rank {
+      font-size: 2.5rem !important;
+    }
+  }
+  .rank {
+    font-size: 2.5rem !important;
+  }
+  .astro-icon {
+    width: 12rem;
+    height: 12rem;
+    height: auto;
+    object-fit: contain;
+  }
+</style>
+
+<!-- <div class="intro__content mx-5">
+  <div class="intro__container">
+    <div class="container-fluid px-0">
+      <div class="row gx-0">
+        <div class="col-12">
+          <div class="headline">
+            <h1 class="headline__title">
+              Coming soon &amp; portfolio template for the great launch
+            </h1>
+            <div class="headline__btnholder d-flex">
+              <a
+                href="#live-preview"
+                class="btn-bottom anim-down scroll-to-preview"
+              >
+                <span class="circle">
+                  <i class="circle__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 25 25"
+                    >
+                      <path
+                        fill="#393C44"
+                        d="M25,4.8V24v1h-1H3.8v-1h19.5L0,0.7L0.7,0L24,23.3V4.8H25z"
+                      ></path>
+                    </svg>
+                  </i>
+                </span>
+                <span class="caption">View demos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<section id="live-preview" class="demo__links first-section">
+  <div
+    class="headline mb-5 margin__title"
+    style="position:relative;    display: flex;
+    padding-bottom: 70px;
+    place-content: space-between;margin-top: 14rem;"
+  >
+    <h2 class="headline__title">
+      Notre <br />expertise
+    </h2>
+    <div class="headline__btnholder d-flex">
+      <a href="#live-preview" class="btn-bottom anim-down scroll-to-preview">
+        <span class="circle">
+          <i class="circle__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 25 25"
+            >
+              <path
+                fill="#393C44"
+                d="M25,4.8V24v1h-1H3.8v-1h19.5L0,0.7L0.7,0L24,23.3V4.8H25z"
+              ></path>
+            </svg>
+          </i>
+        </span>
+        <span class="caption">Consulter les <br />derniers articles</span>
+      </a>
+    </div>
+  </div>
+  <div class="links__card">
+    <div class="container-fluid p-0">
+      <div class="container-fluid px-0">
+        <div
+          class="row gx-5 gy-5 align-items-stretch"
+          data-astro-cid-aafkaq3q=""
+        >
+          <!-- feature single item -->
+          <div class="col-12 col-xl-4" data-astro-cid-aafkaq3q="">
+            <div
+              class="card card-white border-radius-s animate-in-up"
+              data-astro-cid-aafkaq3q=""
+            >
+              <div class="card__image card-image-1" data-astro-cid-aafkaq3q="">
+              </div><div
+                class="card__title"
+                data-astro-cid-aafkaq3q=""
+                style="
+    display: flex;
+"
+              >
+                <div
+                  class="card__tags"
+                  data-astro-cid-aafkaq3q=""
+                  style="
+    /* margin-right: 50px; */
+"
+                >
+                  <img
+                    class="astro-icon"
+                    src="https://getillustrations.b-cdn.net//packs/festival-ui-illustrations/elements/_1x/ecology%20_%20power,%20energy,%20electricity,%20weather,%20lightening,%20light_demo.png"
+                  />
+
+                  <h4 style="" data-astro-cid-aafkaq3q="">Top Performance</h4><p
+                    class="opacity-70"
+                    style="font-size: 2rem;margin-top: auto;"
+                    data-astro-cid-aafkaq3q=""
+                  >
+                    Nous comprenons que chaque problème unique nécessite une
+                    solution unique. Nous choisissons notre meilleure
+                    combinaison de talents pour chaque projet distinct.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- feature single item -->
+          <div class="col-12 col-xl-4" data-astro-cid-aafkaq3q="">
+            <div
+              class="card card-gradient border-radius-s animate-in-up"
+              data-astro-cid-aafkaq3q=""
+            >
+              <div class="card__image card-image-4" data-astro-cid-aafkaq3q="">
+              </div><div class="card__title" data-astro-cid-aafkaq3q="">
+                <h4 data-astro-cid-aafkaq3q="">Optimisation maximale</h4><div
+                  class="card__tags d-flex flex-wrap"
+                  data-astro-cid-aafkaq3q=""
+                >
+                  <span class="rounded-tag" data-astro-cid-aafkaq3q=""
+                    >Illustrations</span
+                  ><span class="rounded-tag" data-astro-cid-aafkaq3q=""
+                    >3d models</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div><!-- feature single item -->
+          <div class="col-12 col-xl-4" data-astro-cid-aafkaq3q="">
+            <div
+              class="card card-white border-radius-s animate-in-up"
+              data-astro-cid-aafkaq3q=""
+            >
+              <div class="card__image card-image-3" data-astro-cid-aafkaq3q="">
+              </div><div class="card__title" data-astro-cid-aafkaq3q="">
+                <h4 data-astro-cid-aafkaq3q="">Dernières technologies</h4><div
+                  class="card__tags d-flex flex-wrap"
+                  data-astro-cid-aafkaq3q=""
+                >
+                  <span class="rounded-tag" data-astro-cid-aafkaq3q=""
+                    >Logo Design</span
+                  ><span class="rounded-tag" data-astro-cid-aafkaq3q=""
+                    >Style Guides</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div><!-- feature single item -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

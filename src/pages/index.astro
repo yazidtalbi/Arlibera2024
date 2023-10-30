@@ -14,51 +14,15 @@ import Posts from "../components/Posts.astro";
 import Cta from "../components/Cta.astro";
 import Benefits from "../components/Benefits.astro";
 import FreeConsultation from "../components/FreeConsultation.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <!-- Loader Start -->
-    <div class="loader">
-      <div class="loader">
-        <div class="loader__content">
-          <div class="loader__logo">
-            <img
-              src="img/logo.svg"
-              alt="Emeric - Coming Soon and Portfolio Template"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Loader End -->
-
-    <!-- Gradient Background Start -->
-    <div class="fullscreen-bg">
-      <div class="blur"></div>
-      <div class="blur"></div>
-      <div class="blur"></div>
-    </div>
-    <!-- Gradient Background End -->
-
-    <Header title={SITE_TITLE} />
-    <section id="main" class="main" style="overflow:auto;">
-      <Hero />
-      <Introduction />
-      <Services />
-      <Projects />
-      <Benefits />
-      <Testimonials />
-      <Posts />
-      <Cta />
-      <Footer />
-    </section>
-    <script is:inline src="src/js/libs.min.js"></script>
-    <script is:inline src="src/js/gallery-init.js"></script>
-    <script is:inline src="src/js/custom.js"></script>
-  </body>
-</html>
+<SiteLayout>
+  <Hero />
+  <Introduction />
+  <Services />
+  <Projects />
+  <Benefits />
+  <Testimonials />
+  <Posts />
+</SiteLayout>

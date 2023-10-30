@@ -1,0 +1,30 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+
+import Testimonials from "../../components/Testimonials.astro";
+
+import SiteLayout from "../../layouts/SiteLayout.astro";
+
+import Hero from "../../components/services/Hero.astro";
+import Intro from "../../components/services/Intro.astro";
+import Expertise from "../../components/services/Expertise.astro";
+import Projects from "../../components/services/Projects.astro";
+import Stack from "../../components/services/Stack.astro";
+
+import FAQ from "../../components/services/FAQ.astro";
+import Related from "../../components/services/Related.astro";
+---
+
+<SiteLayout>
+  <Hero />
+  <Intro />
+  <Expertise />
+  <Projects />
+  <Stack />
+  <Testimonials />
+  <FAQ />
+  <Related />
+</SiteLayout>

@@ -1,0 +1,58 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+import Hero from "../components/Hero.astro";
+import Introduction from "../components/Introduction.astro";
+import Projects from "../components/Projects.astro";
+import Services from "../components/Services.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Sectors from "../components/Sectors.astro";
+import Posts from "../components/Posts.astro";
+import Cta from "../components/Cta.astro";
+import Benefits from "../components/Benefits.astro";
+import FreeConsultation from "../components/FreeConsultation.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <!-- Loader Start -->
+    <div class="loader">
+      <div class="loader">
+        <div class="loader__content">
+          <div class="loader__logo">
+            <img
+              src="img/logo.svg"
+              alt="Emeric - Coming Soon and Portfolio Template"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Gradient Background Start -->
+    <div class="fullscreen-bg">
+      <div class="blur"></div>
+      <div class="blur"></div>
+      <div class="blur"></div>
+    </div>
+    <!-- Gradient Background End -->
+
+    <Header title={SITE_TITLE} />
+    <section id="main" class="main" style="overflow:auto;">
+      <slot />
+      <Cta />
+      <Footer />
+    </section>
+    <script is:inline src="src/js/libs.min.js"></script>
+    <script is:inline src="src/js/gallery-init.js"></script>
+    <script is:inline src="src/js/custom.js"></script>
+  </body>
+</html>
