@@ -1,0 +1,56 @@
+---
+import { Breadcrumbs } from "astro-breadcrumbs";
+
+import "astro-breadcrumbs/breadcrumbs.css";
+---
+
+<div class="pt-56 px-24">
+  <section class="">
+    <nav class="flex" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li>
+          <div class="flex items-center">
+            <a
+              href="#"
+              class="ml-1 text-3xl font-medium hover:text-blue-600 md:ml-2"
+              >Projects</a
+            >
+          </div>
+        </li>
+        <li aria-current="page">
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mx-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"></path>
+            </svg>
+            <span class="ml-1 text-3xl font-medium hover:text-blue-600 md:ml-2"
+              >Flowbite</span
+            >
+          </div>
+        </li>
+      </ol>
+    </nav>
+
+    <hr class="h-px border-0 bg-gray-500 my-16" />
+
+    <h2 class="headline__title pb-20">
+      REVAMPED DESIGN FOR THE EMPLOYEE RECOGNITION
+    </h2>
+
+    <img
+      class="h-2xl object-cover max-w-full border-radius-s"
+      src="https://assets-global.website-files.com/63fc977c14aaea404dce4439/6512a2673df3c3541eb948a9_%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0%201%206.webp"
+      alt="image description"
+    />
+  </section>
+</div>

@@ -16,13 +16,17 @@ import Related from "../../components/projects/Related.astro";
 ---
 
 <SiteLayout>
-  <section style="background:white">
-    <Hero />
-    <Problem />
-    <Image />
-    <Text />
-    <Feedback />
-  </section>
+  <div class="">
+    <section class="bg-white border-radius-m pb-52">
+      <section class="mx-auto px-12"><Hero /></section>
+      <div class="px-4 md:px-48">
+        <Text />
+        <Problem />
+        <Image />
+        <Feedback />
+      </div>
+    </section>
+  </div>
 
   <Related />
 </SiteLayout>

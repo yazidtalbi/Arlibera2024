@@ -1,111 +1,102 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { Icon } from "astro-icon";
+import Related from "../../components/projects/Related.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<SiteLayout>
+  <section class="bg-white">
+    <div class="pt-32 pb-72 relative max-w-screen-xl mx-auto">
+      <div>
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li>
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  class="ml-1 text-3xl font-medium hover:text-blue-600 md:ml-2"
+                  >Projects</a
+                >
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 mx-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+                </svg>
+                <span
+                  class="ml-1 text-3xl font-medium hover:text-blue-600 md:ml-2"
+                  >Flowbite</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+
+        <hr class="h-px border-0 bg-gray-500 my-16" />
+        <div class="rounded-tag" style="margin-bottom:30px;">DÉVELOPPEMENT</div>
+        <h2 class="headline__title">
+          CRAFTING A WINNING BUSINESS PITCH: A COMPREHENSIVE GUIDE TO CAPTIVATE
+          INVESTORS
+        </h2>
+      </div>
+
+      <hr class="h-px border-0 bg-gray-500 my-20" />
+
+      <div class="flex">
+        <div
+          class="bg-white space-y-16 px-10 pt-3 sticky top-48 h-full border-radius-s"
+        >
+          <Icon class="text-black w-10 h-10" name="simple-icons:linkedin" />
+          <Icon class="text-black w-10 h-10" name="simple-icons:twitter" />
+          <Icon class="text-black w-10 h-10" name="simple-icons:facebook" />
+        </div>
+        <div class="ml-12">
+          <p class="inner__text animate-in-up text-4xl leading-relaxed pr-20">
+            In today’s competitive business landscape, securing funding from
+            investors is both an art and a science. A well-prepared business
+            pitch can be the difference between launching your dream venture and
+            watching it fade into obscurity. Discover the crucial secrets behind
+            captivating investors as we delve into the artistry and methodology
+            that lie at the heart of a winning business pitch.
+          </p>
+        </div>
+        <div>
+          <div class="w-[240px] flex space-x-5 ml-10 items-center">
+            <img
+              class="rounded rounded-circle w-24 h-24"
+              loading="lazy"
+              src="https://htmlcssfreebies.com/demo/bs-components/testimonials/testimonial-1/assets/img/testimonials/testimonial-1/img-1.jpg"
+              alt=""
+            />
+            <div class="space-y-2">
+              <h4 class="text-4xl font-bold tracking-tight capitalize">
+                Farah Allen
+              </h4><h6 class="opacity-50 text-2xl">
+                Founder &amp; CEO at Labz
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <Related /> -->
+</SiteLayout>
